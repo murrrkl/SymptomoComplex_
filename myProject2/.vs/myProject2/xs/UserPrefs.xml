@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{6D659620-0C01-4144-B1AE-99C98EECEEFF}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.myProject2 PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="myProject2/symptomocomplex.json">
+    <Files>
+      <File FileName="myProject2/patient_data.json" Line="7" Column="7" />
+      <File FileName="myProject2/symptomocomplex.json" Line="68" Column="3" />
+      <File FileName="myProject2/Program.cs" Line="225" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="myProject2" expanded="True">
+            <Node name="myProject2" expanded="True">
+              <Node name="symptomocomplex.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
