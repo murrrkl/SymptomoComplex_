@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using Microsoft.AspNetCore;
 using myProject2;
 using Microsoft.AspNetCore.Hosting;
@@ -195,6 +195,12 @@ namespace myProject2
 
             string place = jsonFile[0]["doctor"]["place"]; // Место
             string data = jsonFile[0]["patient"]["data"]; // Дата
+            string day = data.Substring(0, 2); // День
+            string month = data.Substring(3, 2); // Месяц
+            string year = data.Substring(6, 4); // Год
+
+            // "2023-03-04T00:00:00",
+            data = year + "-" + month + "-" + day + "T00:00:00";
 
             List<string> patients = new List<string> { };
 
@@ -259,16 +265,16 @@ namespace myProject2
                 FinalText += " : ";
                 FinalText += N.ToString();
                 FinalText += ", \n";
-                FinalText += "\"place\"";
-                FinalText += " : ";
-                FinalText += "\"";
-                FinalText += place;
-                FinalText += "\"";
-                FinalText += ",\n";
                 FinalText += "\"date_symptoms\"";
                 FinalText += " : ";
                 FinalText += "\"";
                 FinalText += data;
+                FinalText += "\"";  
+                FinalText += ",\n";
+                FinalText += "\"hospital\"";
+                FinalText += " : ";
+                FinalText += "\"";
+                FinalText += place;
                 FinalText += "\"";
                 FinalText += "\n";
                 FinalText += "}";
